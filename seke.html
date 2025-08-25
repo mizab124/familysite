@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> امین.سکه شانسی</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: sans-serif;
+      background: #f0f0f0;
+    }
+.mmd{text-align = center;
+ color: white؛ background-color : black}
+
+    .coin-container {
+      perspective: 1000px; /* عمق سه بعدی */
+      margin-bottom: 20px;
+    }
+
+    .coin {
+      width: 150px;
+      height: 150px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+      cursor: pointer;
+    }
+
+    .coin-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      backface-visibility: hidden; /* پشت کارت مخفی شود */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .coin-front {
+      background: gold;
+    }
+
+    .coin-back {
+      background: silver;
+      transform: rotateY(180deg);
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+
+  <script defer>
+    window.addEventListener("DOMContentLoaded", function() {
+      const coin = document.querySelector(".coin");
+      const btn = document.getElementById("flipBtn");
+
+      btn.addEventListener("click", function() {
+        // زاویه تصادفی بین 720 تا 1440 درجه
+        const randomDeg = Math.floor(Math.random() * 720 + 720);
+        coin.style.transform = "rotateY(" + randomDeg + "deg)";
+      });
+    });
+  </script>
+</head>
+<body>
+    <nav class="mize">
+        <ul class="ul">
+            <li class="a"><a style="text-decoration: none;color: black;" href="index.html">home</a></li>
+            <li class="a">
+                <a href="https://www.minecraft.net/en-us/collectibles?tabs=%7B%22tab%22%3A0%7D"
+                    style="text-decoration: none;color: black;">pictures</a>
+            </li>
+            <li class="a"> <a href="telep.html" style="text-decoration: none;color: black;">telephone</a></li>
+            <li class="a"><a href="aboute.html" style="text-decoration: none; color: black;">aboute us</a></li>
+            <li class="f">پس از فشردن یکی از دکمه ها با دکمه بک برگردید</li>
+            <li ><a class="a" href="seke.html">game</a></li>
+            <span>
+                <img src="wallpaper_minecraft_java_edition_2560x1440.png" alt="" class="imgg">
+
+
+
+            </span>
+        </ul>
+    </nav>
+
+<h2 class="mmd">لطفا پس از استفاده از سایت آنرا رفرش کنید</h2>
+  <div class="coin-container">
+    <div class="coin">
+      <div class="coin-face coin-front">شیر</div>
+      <div class="coin-face coin-back">خط</div>
+    </div>
+  </div>
+  <button id="flipBtn">چرخوندن سکه</button>
+</body>
+</html>

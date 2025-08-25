@@ -1,0 +1,53 @@
+.mm {
+    text-align: center;
+    border: 21px solid white;
+}
+
+.mm:hover {
+    transform: scale(0.9);
+}
+
+.we:hover {
+    transform: scale(0.9);
+}
+
+.mize {
+    background-color: #9695957d;
+}
+
+.ul {
+    color: black;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.a {
+    float: right;
+    padding: 20px;
+    background-color: #ffffff;
+    text-decoration: none;
+    ;
+    transition-duration: 2s;
+}
+
+
+.ul {
+    text-decoration: none;
+}
+
+.a:hover {
+    transition-timing-function: linear;
+  transform: rotate(30deg);
+    transition-duration: 2s;
+transition-timing-function: ease ;
+    cursor: pointer;
+}
+
+.f {
+    background-color: #fff;
+}
+.imgg{height: 100px;}
+.yek{background-color: #fff; text-align: center;}
+.do{color: #fff; text-align: center;}
